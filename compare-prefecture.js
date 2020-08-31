@@ -62,6 +62,7 @@
     'おでんは飲み物だよね？　だっておでん缶あるじゃん。',
     '大事なのは土地の広さじゃない。心の広さやで',
     '片面揚げたらひっくり返す。フライ返しだ！',
+    '打たれたら打ち返す。ピッチャー返しだ！',
     'コンタクトをハードからソフトに変えたんだけど、わかる？',
     '「お宝鑑定団」間寛平氏起用で「お宝寛平団」',
     '桶狭間寛平の戦い'
@@ -76,7 +77,7 @@
   const doyaDivided = document.getElementById('doya-area');
 
   compareButton.onclick = () =>{  
-    // ボタン連打禁止処理
+    // ボタン連打禁止処理　いろいろ試した苦労の痕跡
     // compareButton.style.visibility = "hidden";
     // document.getElementById('compare').style.visibility = 'hidden';
     // document.getElementById('compare').setAttribute("disabled", true);
@@ -109,6 +110,7 @@
     // console.log(compare_result);
     paragraph1.innerText = prefName +'の面積は、東京ドーム '+ compare_result+'個分だよ！';
     resultDivided.appendChild(paragraph1);
+    //1.5秒遅らせて表示
     setTimeout(function(){
       paragraph2.innerText = 'わかりにくい？ ほんじゃこれならどう？';
       resultDivided.appendChild(paragraph2);
@@ -120,6 +122,7 @@
        </div> */
 
     /*以下message-area */
+    //メッセージ表示からドヤ表示まで3秒、ドヤ表示まで2秒
     setTimeout(function(){
       var index = Math.floor(Math.random() * 100) % messages.length;
       // console.log(index);
@@ -137,7 +140,7 @@
         compareButton.disabled = false;//ボタンを戻す処理
         compareButton.style.backgroundColor = '';
       },2000);
-    },2500);
+    },3000);
     // ボタンを戻す処理、ここだとだめなのはなぜ？
     // compareButton.style.visibility = "visible";
     // compareButton.style.display = "inline"
