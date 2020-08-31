@@ -121,8 +121,10 @@
      * <p>わかりにくい？・・・
        </div> */
 
-    /*以下message-area */
-    //メッセージ表示からドヤ表示まで3秒、ドヤ表示まで2秒
+    /* 以下message-area */
+    /* setTimeoutを入れ子にするのは、ドヤが先に表示されるのを防止
+    *　上の表示から2sでメッセージ、さらに2sでドヤ、全部で4s*/
+  
     setTimeout(function(){
       var index = Math.floor(Math.random() * 100) % messages.length;
       // console.log(index);
@@ -140,7 +142,7 @@
         compareButton.disabled = false;//ボタンを戻す処理
         compareButton.style.backgroundColor = '';
       },2000);
-    },3000);
+    },4000);
     // ボタンを戻す処理、ここだとだめなのはなぜ？
     // compareButton.style.visibility = "visible";
     // compareButton.style.display = "inline"
