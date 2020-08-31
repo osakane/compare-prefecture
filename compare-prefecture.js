@@ -110,13 +110,13 @@
     paragraph1.innerText = prefName +'の面積は、東京ドーム '+ compare_result+'個分だよ！';
     resultDivided.appendChild(paragraph1);
     setTimeout(function(){
-      paragraph2.innerText = 'それともう一つ言いたいことはね・・・';
+      paragraph2.innerText = 'わかりにくい？ ほんじゃこれならどう？';
       resultDivided.appendChild(paragraph2);
     },1500);
     /** <div id="result-area"> 
      *  <h3>hoge県の面積は・・・</h3> 
      * <p>hoge県の面積は、東京ドーム　？？？個分だよ！</p>
-     * <p>でも一番言いたいことは・・・
+     * <p>わかりにくい？・・・
        </div> */
 
     /*以下message-area */
