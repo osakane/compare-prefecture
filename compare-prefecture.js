@@ -112,7 +112,7 @@
     resultDivided.appendChild(paragraph1);
     //1.5秒遅らせて表示
     setTimeout(function(){
-      paragraph2.innerText = 'わかりにくい？ ほんじゃこれならどう？';
+      paragraph2.innerText = 'わかりにくい？ ほんじゃこれならドヤれる？';
       resultDivided.appendChild(paragraph2);
     },1500);
     /** <div id="result-area"> 
